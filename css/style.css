@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --cor-vermelha: #ff3131;
+  --cor-preta: black;
+  --cor-branca: white;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#conteudo-principal {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+}
+
+/* Estilizando o Menu Lateral */
+#menu-lateral {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+  max-width: 300px;
+  padding: 50px 10px 50px 0px;
+  border-right: 2px solid var(--cor-vermelha);
+  color: var(--cor-vermelha);
+  font-family: "Open Sans", sans-serif;
+}
+
+#logo-doe-vida {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+#logo-doe-vida,
+#menu-lateral > h1 {
+  font-size: 2rem;
+  margin: 0px auto;
+}
+
+#nav-menu-lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 2rem;
+}
+
+.btn-menu-lateral {
+  padding: 10px 0;
+}
+
+.link-menu-lateral {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--cor-vermelha);
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.icon-menu-lateral {
+  height: 30px;
+}
+/* Fim do Menu Lateral */
+
+/* Estilizando o Menu Superior */
+#div-tela-inical {
+  width: 100%;
+}
+
+#cabecalho-tela-inicial {
+  width: 100%;
+  height: 100px;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--cor-vermelha);
+  font-family: "Open Sans", sans-serif;
+  color: var(--cor-vermelha);
+}
+
+#btn-perfil-usuario {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  height: 70px;
+  padding: 0px 30px;
+  border: 2px solid var(--cor-vermelha);
+  border-radius: 40px;
+  text-decoration: none;
+  color: var(--cor-preta);
+}
+
+.dados-usuario {
+  color: var(--cor-vermelha);
+  font-size: 0.8rem;
+}
+
+.icon-menu-superior > img {
+  height: 30px;
+}
+/* Fim do Menu Superior */
+
+/* Estilizando Carrossel de Campanhas */
+#carrossel-campanhas {
+  width: 100%;
+  height: 200px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.img-campanha > img {
+  height: 150px;
+  width: 450px;
+  border: 2px solid var(--cor-vermelha);
+  border-radius: 40px;
+}

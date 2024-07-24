@@ -63,8 +63,8 @@
         <div>
           <form action="">
             <label for="nome">Nome civil:</label>
-            <input type="text" name="nome" id="nome" >
-            
+            <input type="text" name="nome" id="nome">
+
             <label for="CPF">CPF</label>
             <input type="text" name="CPF" id="CPF" pattern="\d{3}\,\d{3}\,\d{3}-\d{2}">
 
@@ -78,22 +78,25 @@
         <div>
           <form action="">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" >
+            <input type="email" name="email" id="email">
 
             <label for="Contato">Contato:</label>
             <input type="tel" id="Contato" name="Contato" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}">
 
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" maxlength="8" pattern="[0-8]{5}-[0-8]{3}">
+
             <label for="rua">Rua</label>
-            <input type="text" name="rua" id="rua" >
-            
+            <input type="text" name="rua" id="rua">
+
             <label for="bairro">Bairro</label>
-            <input type="text" name="bairro" id="bairro" >
-           
+            <input type="text" name="bairro" id="bairro">
+
             <label for="nome">Cidade</label>
-            <input type="text" name="cidade" id="cidade" >
-           
-            <label for="nome">Nome civil:</label>
-            <input type="text" name="nome" id="nome" >
+            <input type="text" name="cidade" id="cidade">
+
+            <label for="estado">Estado</label>
+            <input type="text" name="estado" id="estado">
 
             <button type="submit">Salvar</button>
 

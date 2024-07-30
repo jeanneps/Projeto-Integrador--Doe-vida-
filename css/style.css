@@ -130,3 +130,18 @@ body {
   border: 2px solid var(--cor-vermelha);
   border-radius: 40px;
 }
+#editar {
+  background-color: red;
+  width: 70px;
+  height: 30px;
+  color: white;
+  text-align: center;
+}
+#Editar_perfil {
+  display: flex;
+  justify-content: space-between;
+}
+#perfil_conteiner {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}

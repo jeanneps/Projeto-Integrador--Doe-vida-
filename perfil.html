@@ -61,46 +61,54 @@
           <h1>Informações Auto-Declaradas</h1>
         </div>
       <div id="perfil_container">
-        <div>
+        <div id="container1" >
           <form action="">
             <label for="nome">Nome civil:</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="nome" id="nome" readonly> 
 
             <label for="CPF">CPF</label>
-            <input type="text" name="CPF" id="CPF" pattern="\d{3}\,\d{3}\,\d{3}-\d{2}">
+            <input type="text" name="CPF" id="CPF" pattern="\d{3}\,\d{3}\,\d{3}-\d{2}" readonly>
 
             <label for="data">Data de Nascimento</label>
-            <input type="date" name="data" id="data">
+            <input type="date" name="data" id="data" readonly>
 
             <label for="carteira">Carteira de Doador</label>
-            <input type="carteira" name="carteira" id="carteira" pattern="\d{4}\,\d{4}\,\d{4}\,\d{4}">
+            <input type="carteira" name="carteira" id="carteira" pattern="\d{4}\,\d{4}\,\d{4}\,\d{4}" readonly>
           </form>
         </div>
-        <div id="container1">
+        <div id="container2">
           <form action="">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
+           <div class="icon"> <input type="email" name="email" id="email"> 
+            <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
 
             <label for="Contato">Contato:</label>
-            <input type="tel" id="Contato" name="Contato" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}">
+            <div class="icon"><input type="tel" id="Contato" name="Contato" pattern="[0-9]{2} [0-9]{4}-[0-9]{4}">
+              <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
 
             <label for="cep">CEP:</label>
-            <input type="text" name="cep" id="cep" maxlength="8" pattern="[0-8]{5}-[0-8]{3}">
+            <div class="icon"> <input type="text" name="cep" id="cep" maxlength="9" pattern="[0-8]{5}-[0-8]{3}">
+            <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
 
-            <label for="rua">Rua:</label>
-            <input type="text" name="rua" id="rua">
+            <label for="logradouro">logradouro:</label>
+            <div class="icon"><input type="text" name="logradouro" id="logradouro">
+            <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
 
             <label for="bairro">Bairro:</label>
-            <input type="text" name="bairro" id="bairro">
+            <div class="icon"> <input type="text" name="bairro" id="bairro">
+            <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
 
             <label for="nome">Cidade:</label>
-            <input type="text" name="cidade" id="cidade">
+            <div class="icon"><input type="text" name="cidade" id="cidade">
+             <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
+          
 
-            <label for="estado">Estado:</label>
-            <input type="text" name="estado" id="estado">
+            <label for="uf">Estado:</label>
+            <div class="icon"> <input type="text" name="uf" id="uf">
+            <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute;"></div>
 
-            <button type="submit">Salvar</button>
           </form>
+          <button type="submit">Salvar</button>
 
         </div>
         

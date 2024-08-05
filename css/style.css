@@ -43,7 +43,7 @@ body {
 }
 
 #logo-doe-vida,
-#menu-lateral > h1 {
+#menu-lateral>h1 {
   font-size: 2rem;
   margin: 0px auto;
 }
@@ -71,6 +71,7 @@ body {
 .icon-menu-lateral {
   height: 30px;
 }
+
 /* Fim do Menu Lateral */
 
 /* Estilizando o Menu Superior */
@@ -108,9 +109,10 @@ body {
   font-size: 0.8rem;
 }
 
-.icon-menu-superior > img {
+.icon-menu-superior>img {
   height: 30px;
 }
+
 /* Fim do Menu Superior */
 
 /* Estilizando Carrossel de Campanhas */
@@ -124,7 +126,7 @@ body {
   gap: 50px;
 }
 
-.img-campanha > img {
+.img-campanha>img {
   height: 150px;
   width: 450px;
   border: 2px solid var(--cor-vermelha);
@@ -132,25 +134,36 @@ body {
 }
 
 #editar {
-  width: 100%;
-  height: 50px;
   color: red;
   text-align: center;
+  font-size: 35px;
+  padding: 15px;
 }
+
 #Editar_perfil {
   background-color: red;
   display: flex;
+  padding: 10px;
   justify-content: space-around;
   color: white;
 }
+
 #perfil_container {
-display: grid;
-grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
+
 #container1 {
-  border-left: 5px solid red;
-  height: 100%;
+  border-right: 5px solid red ;
+  margin-left: 60px;
+
+
 }
+#container2 {
+  margin-left: 50px;
+
+}
+
 /* input para digitar email
 tamanho da caixa
 preenchimento de dentro da caixa
@@ -158,39 +171,63 @@ tamanho da fonte(letras)
 borda em volta da caixa
 arredonda a borda da caixa  */
 input[type="email"] {
-  width: 50%;
-  padding: 5px;
+  width: 20%;
+  padding: 4px;
   font-size: 15px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 4px;
+  position: absolute
+  
 
 }
+#icon {
+  position: relative;
+
+}
+
+
 input[type="tel"] {
-  width: 50%;
-  padding: 5px;
+  width: 20%;
+  padding: 4px;
   font-size: 15px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 4px;
+  position: absolute
+  
 }
+
 input[type="text"] {
-  width:50%;
-  padding: 5px;
+  width: 20%;
+  padding: 4px;
   font-size: 15px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 4px;
+  position: absolute
 }
+
 input[type="date"] {
-  width: 50%;
-  padding: 5px;
+  width: 20%;
+  padding: 4px;
   font-size: 15px;
-  border: 2px solid #000;
+  border: 1px solid #000;
   border-radius: 4px;
+  position: absolute
 }
+input[type="carteira"] {
+  width: 20%;
+  padding: 4px;
+  font-size: 15px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  position: absolute
+}
+
 label {
   display: block;
-  margin-bottom: 10px;
+  margin-top: 45px;
   font-size: 15px;
 }
+
 /* botao de entrar
 tamanho e largura
 cor de fundo 
@@ -200,9 +237,10 @@ curso para ficar uma mão no lugar da seta */
 button {
   width: 80px;
   padding: 10px;
-  margin-top: 50px;
+  margin-top: 40px;
   background-color: red;
   color: white;
   cursor: pointer;
+
 
 }

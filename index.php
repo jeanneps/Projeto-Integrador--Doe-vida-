@@ -2,10 +2,10 @@
 //INICIALIZA AS VARIAVEIS COM O VALOR VAZIO
 $logradouro = $bairro = $cidade = $uf = "";
 // OBTEM O VALOR DO FORMULARIO DE CEP
-$cep = isset($_POST['cep']) ? $_POST['cep'] : "";
+$cep = isset($_GET['cep']) ? $_GET['cep'] : "";
 $data = [];
 if (!empty($cep)) {
-  $url = "https://viacep.com.br/ws/{$cep}/json/";
+  $url ="https://viacep.com.br/ws/{$cep}/json/";
   //suprime erros de aviso caso a requisição falhe.
   $resposta = @file_get_contents($url);
   if ($resposta !== FALSE) {
@@ -110,16 +110,16 @@ if (isset($data['erro']) && $data['erro']) {
               </div>
 
               <div>
-                <form action="" method="POST">
+                <form action="" method="GET">
                   <label for="cep">CEP</label>
-                  <div class="icon"><input type="text" name="cep" id="cep" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000" required>
+                  <div class="icon"><input type="text" name="cep" id="cep" maxlength="9" pattern="[0-9]{5}-[0-9]{3}" placeholder="00000-000">
                     <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute; margin-left: 350px;">
                   </div>
                   <button type="submit">Buscar</button>
                 </form>
               </div>
 
-              <label for="logradouro">Logradouro:</label>
+              <label for="logradouro">Logradouro e Nº:</label>
               <div class="icon"> <input type="text" name="logradouro" id="logradouro" value="<?php echo ($logradouro); ?>">
                 <img src="imgs/edit.png" alt="icone de editar" style="width: 25px; height: 25px; position: absolute; margin-left: 350px;">
               </div>

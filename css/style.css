@@ -133,6 +133,7 @@ body {
   border-radius: 40px;
 }
 
+
 #editar {
   color: red;
   text-align: center;
@@ -148,28 +149,23 @@ body {
   color: white;
 }
 
+#linha_divisor {
+  height: 80vh;
+  width: 8px;
+  background-color: red;
+
+}
+
 #perfil_container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  
+}
+.container1 {
+  flex: 1;
+  padding: 20px;
+  margin-left: 150px;
 }
 
-#container1 {
-  border-right: 5px solid red ;
-  margin-left: 60px;
-
-
-}
-#container2 {
-  margin-left: 50px;
-
-}
-
-/* input para digitar email
-tamanho da caixa
-preenchimento de dentro da caixa
-tamanho da fonte(letras)
-borda em volta da caixa
-arredonda a borda da caixa  */
 input[type="email"] {
   width: 20%;
   padding: 4px;
@@ -177,14 +173,10 @@ input[type="email"] {
   border: 1px solid #000;
   border-radius: 4px;
   position: absolute
-  
-
 }
 #icon {
   position: relative;
-
 }
-
 
 input[type="tel"] {
   width: 20%;
@@ -228,12 +220,6 @@ label {
   font-size: 15px;
 }
 
-/* botao de entrar
-tamanho e largura
-cor de fundo 
-cor preta
-borda do botao
-curso para ficar uma mão no lugar da seta */
 button {
   width: 80px;
   padding: 10px;
@@ -241,6 +227,4 @@ button {
   background-color: red;
   color: white;
   cursor: pointer;
-
-
 }
